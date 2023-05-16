@@ -1,40 +1,221 @@
-
-
-
 html {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("https://technologywithpurpose.org/wp-content/uploads/2022/11/twp-home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
 }
 
 p {
-    margin-right: 2em;
-    font-weight: bold;
-    font-size: 0.9em;
-    font-weight: 500;
+  margin-right: 2em;
+  font-weight: bold;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 button {
-    background-color: white;
-    border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
-    border: 2px solid black;
-    font-size: 0.8em;
-    width: 8em;
+  background-color: white;
+  border-radius: 30px;
+  padding: 0px 1.5em;
+  height: 2.5em;
+  border: 2px solid black;
+  font-size: 0.8em;
+  width: 8em;
 }
 
-div#navbar-left img {
-    width: 8em;
+.general-container {
+  margin: 0 20px;
+}
+
+.header-container {
+  background-color: #fff;
+  display: flex;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
+  padding: 20px 350px;
+  font-size: 14px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icons-containers {
+  margin: 0 20px;
+}
+
+.fa-brands {
+  margin: 10px;
+}
+
+.fa-brands:hover {
+  color: rgb(110, 37, 228);
+  cursor: pointer;
+}
+
+.header-buttons {
+  transition: all 0.25s ease;
+  padding: 0 5px;
+}
+
+.header-buttons:hover {
+  color: rgb(53, 31, 255);
+  cursor: pointer;
+}
+
+.button-sumate {
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-size: 13px;
+  height: 35px;
+}
+
+.button-sumate:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* PRIMERA PARTE */
+
+.body-up-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.brand-text {
+  margin-top: 70px;
+  font-size: 28px;
+  width: 30%;
+}
+
+.buttons-body-container {
+  margin-bottom: 100px;
+}
+
+.button-contact {
+  width: 140px;
+  height: 37px;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+  font-size: 12px;
+}
+
+.button-second-sumate {
+  font-size: 12px;
+  font-weight: 500;
+  border: 2px solid #6b53f0;
+  color: #6b53f0;
+  width: 110px;
+  height: 37px;
+  transition: all 0.2s ease;
+}
+
+.button-second-sumate:hover {
+  background-color: #6b53f0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-contact:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* SEGUNDA PARTE */
+
+.body-down-container {
+  display: flex;
+  background-color: #201b24;
+  height: 400px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-body-down-container {
+  width: 45%;
+  display: flex;
+}
+
+.body-down-left-container {
+  width: 50%;
+}
+
+.body-down-left-container > p {
+  line-height: 20px;
+}
+
+.impacto {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.body-down-right-container {
+  display: flex;
+  align-items: end;
+}
+
+.body-statistics {
+  margin: 0 15px;
+}
+
+.statistics-numbers > i {
+  font-size: 15px;
+  color: #6b53f0;
+}
+
+.statistics-numbers {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.body-statistics {
+  text-align: center;
+}
+
+.statistics-text {
+  width: 100%;
+  font-size: 14px;
+  color: #a8a8a8;
+  text-align: center;
+}
+
+.statistics-plus {
+  color: #6b53f0;
+  font-size: 30px;
+}
+
+.plus-fifty-container {
+  display: flex;
+  align-items: center;
+}
+
+/* TERCERA PARTE */
+
+.programa-container {
+  background-color: #fff;
+  margin-top: 900px;
 }
 
 @media (width >= 2500px) {
-    html {
-        font-size: 28px;
-    }
+  html {
+    font-size: 28px;
+  }
 }
 
 @media (width >= 3500px) {
-    html {
-        font-size: 32px;
-    }
+  html {
+    font-size: 32px;
+  }
 }
