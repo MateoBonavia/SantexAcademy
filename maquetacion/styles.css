@@ -28,10 +28,6 @@ button {
   width: 8em;
 }
 
-.general-container {
-  margin: 0 20px;
-}
-
 .header-container {
   background-color: #fff;
   display: flex;
@@ -39,6 +35,8 @@ button {
   justify-content: space-between;
   padding: 20px 350px;
   font-size: 14px;
+  position: fixed;
+  width: 65%;
 }
 
 .navbar-right {
@@ -93,7 +91,7 @@ button {
 }
 
 .brand-text {
-  margin-top: 70px;
+  margin-top: 150px;
   font-size: 28px;
   width: 30%;
 }
@@ -201,11 +199,200 @@ button {
   align-items: center;
 }
 
+.main-container {
+  background-color: #fff;
+  margin-top: 800px;
+}
+
 /* TERCERA PARTE */
 
 .programa-container {
+  /* background-color: #fff; */
+  /* margin-top: 800px; */
+  padding-bottom: 50px;
+}
+
+.programa-title {
+  padding-top: 50px;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.programa-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.first-img-thrid-body {
+  max-width: 590px;
+  border-radius: 0 40px 40px 40px;
+}
+
+.santex-logo {
+  width: 200px;
+  height: 77px;
+  margin-bottom: 0;
+}
+
+.first-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  padding: 90px 90px;
+}
+
+.description > button {
+  width: 120px;
+  height: 40px;
+}
+
+.description > p {
+  line-height: 25px;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.second-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-img-thrid-body {
+  max-width: 590px;
+  border-radius: 40px 40px 0px 40px;
+}
+
+.second-description {
+  padding: 90px 75px;
+}
+
+.second-description > button {
+  width: 120px;
+  height: 40px;
+}
+
+.second-description > p {
+  line-height: 25px;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.second-description > h3 {
+  font-size: 22px;
+}
+
+.btn-info-third-part {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-info-third-part:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* CUARTA PARTE */
+
+.capacitaciones-container {
+  padding-bottom: 50px;
+}
+
+.capacitaciones-title {
+  padding-top: 50px;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.capacitaciones-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.description > h3 {
+  font-size: 22px;
+}
+
+.description > p {
+  font-size: 13px;
+}
+
+/* QUINTA PARTE  */
+
+.general-equipo-container {
+  background-color: #f4f4f5;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.equipo-container {
+  width: 70%;
+}
+
+.equipo-container > h3 {
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+}
+
+.card-container {
+  text-align: center;
   background-color: #fff;
-  margin-top: 900px;
+  border-radius: 20px 20px 20px 0;
+  margin: 0 20px 20px 0;
+}
+
+.team-photos {
+  width: 230px;
+  border-radius: 20px 20px 0 0;
+}
+
+.logo-linkedin-container > i {
+  font-size: 12px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.logo-linkedin-container > i:hover {
+  color: #fff;
+  background-color: #6b53f0;
+  border-color: #6b53f0;
+}
+
+/* BOTON TO TOP */
+
+.fa-solid {
+  position: fixed;
+  bottom: -10px;
+  right: 75px;
+  font-size: 15px;
+  background-color: rgb(73, 73, 73);
+  padding: 15px;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
 }
 
 @media (width >= 2500px) {
