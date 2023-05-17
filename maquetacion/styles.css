@@ -337,6 +337,7 @@ button {
 .general-equipo-container {
   background-color: #f4f4f5;
   margin-top: -20px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
 }
@@ -353,18 +354,24 @@ button {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .card-container {
   text-align: center;
   background-color: #fff;
   border-radius: 20px 20px 20px 0;
-  margin: 0 20px 20px 0;
+}
+
+.card-container > p {
+  width: 100%;
+  margin-top: -15px;
+  color: #8f8f8f;
 }
 
 .team-photos {
-  width: 230px;
+  width: 240px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -374,12 +381,64 @@ button {
   border: 2px solid black;
   border-radius: 50px;
   transition: all 0.2s ease;
+  margin-top: -15px;
 }
 
 .logo-linkedin-container > i:hover {
   color: #fff;
   background-color: #6b53f0;
   border-color: #6b53f0;
+}
+
+/* SEXTA PARTE */
+
+.alianza-container {
+  margin-top: -20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.alianzas {
+  width: 70%;
+}
+
+.alianzas > h3 {
+  font-size: 25px;
+}
+
+.carrusel {
+  height: 100px;
+  /* width: 60%; */
+  border: 2px solid red;
+  margin-bottom: 50px;
+}
+
+/* SEPTIMA PARTE */
+
+.footer-container {
+  background-color: #201b24;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 75%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer > div {
+  color: #fff;
+}
+
+.footer-text {
+  width: 240px;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #c7c7c7;
 }
 
 /* BOTON TO TOP */
