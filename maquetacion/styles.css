@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  margin: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -48,7 +48,7 @@ button {
   margin: 0 20px;
 }
 
-.fa-brands {
+.icons-containers > i {
   margin: 10px;
 }
 
@@ -166,20 +166,12 @@ button {
 
 .body-statistics {
   margin: 0 15px;
-}
-
-.statistics-numbers > i {
-  font-size: 15px;
-  color: #6b53f0;
+  text-align: center;
 }
 
 .statistics-numbers {
   font-size: 50px;
   font-weight: 800;
-}
-
-.body-statistics {
-  text-align: center;
 }
 
 .statistics-text {
@@ -207,8 +199,6 @@ button {
 /* TERCERA PARTE */
 
 .programa-container {
-  /* background-color: #fff; */
-  /* margin-top: 800px; */
   padding-bottom: 50px;
 }
 
@@ -370,6 +360,10 @@ button {
   color: #8f8f8f;
 }
 
+.logo-linkedin-container > i {
+  margin-bottom: 20px;
+}
+
 .team-photos {
   width: 240px;
   border-radius: 20px 20px 0 0;
@@ -404,14 +398,49 @@ button {
 }
 
 .alianzas > h3 {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .carrusel {
   height: 100px;
-  /* width: 60%; */
-  border: 2px solid red;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carrusel > span {
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carrusel > span:hover {
+  background-color: #6b53f0;
+  opacity: 1;
+}
+
+.carrusel > img {
+  width: 250px;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.carrusel > img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 10px;
 }
 
 /* SEPTIMA PARTE */
@@ -421,16 +450,18 @@ button {
   padding: 60px;
   display: flex;
   justify-content: center;
+  width: calc(100% - 6%);
 }
 
 .footer {
   width: 75%;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .footer > div {
-  color: #fff;
+  color: #c5c5c5;
 }
 
 .footer-text {
@@ -441,9 +472,33 @@ button {
   color: #c7c7c7;
 }
 
+.footer > div > p {
+  transition: 0.5s all ease;
+  font-weight: 900;
+}
+
+.footer > div > p:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-media-footer {
+  display: flex;
+}
+
+.ig-footer {
+  margin-right: 10px;
+  font-weight: 900;
+}
+
+.linkedin-footer {
+  margin-right: 10px;
+  font-weight: 900;
+}
+
 /* BOTON TO TOP */
 
-.fa-solid {
+.btn-top {
   position: fixed;
   bottom: -10px;
   right: 75px;
@@ -452,6 +507,12 @@ button {
   padding: 15px;
   color: #fff;
   border-radius: 8px 8px 0 0;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @media (width >= 2500px) {
